@@ -13,6 +13,20 @@ import { ReservasComponent } from './interface/reservas/reservas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {NgIf} from '@angular/common';
+
+import {FormControl, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +37,26 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     UsuariosComponent,
     AsignaturasComponent,
     ReservasComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatCardModule,
+    NgbModule,
+    MatSidenavModule,
+    NgIf,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

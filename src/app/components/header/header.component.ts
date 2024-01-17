@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  showFiller = false;
+  faCoffee = faCoffee;
 }
