@@ -1,11 +1,19 @@
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container" >
     <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
+      <img src="" alt="user_image">
+      <h3>Bienvenido, {{User_Name}}</h3>
+      <div class="menu_option">Dashboard</div>
+      <div class="menu_option">Calendario</div>
+      <div class="menu_option">Subir Carga Lectiva</div>
+      <div class="menu_option">Reservas</div>
+      <div class="menu_option">Docentes</div>
+      <div class="menu_option">Asignaturas</div>
+      <div class="menu_option">Recursos</div>
     </mat-drawer>
     <div class="example-sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
+        <fa-icon [icon]="faBars" size="2x" ></fa-icon>
       </button>
     </div>  
 </mat-drawer-container>
-<fa-icon [icon]="faCoffee" class="icono"></fa-icon>
+<app-footer></app-footer>

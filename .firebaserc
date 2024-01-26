@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "admin-sistema-reserva": {
+      "hosting": {
+        "admin-sistema-reserva": [
+          "admin-sistema-reserva"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "admin-sistema-reserva"
+  }
+}

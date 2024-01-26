@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "admin-sistema-reserva",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

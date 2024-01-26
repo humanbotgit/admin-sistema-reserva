@@ -27,7 +27,8 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"            ],
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -92,6 +93,13 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "admin-sistema-reserva:build:production"
           }
         }
       }
