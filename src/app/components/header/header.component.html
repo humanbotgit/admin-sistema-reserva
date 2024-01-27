@@ -2,7 +2,7 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <img src="" alt="user_image">
       <h3>Bienvenido, {{User_Name}}</h3>
-      <div class="menu_option">Dashboard</div>
+      <div class="menu_option" matTooltip="Info about the action" [matTooltipPosition]="'left'">Dashboard</div>
       <div class="menu_option">Calendario</div>
       <div class="menu_option">Subir Carga Lectiva</div>
       <div class="menu_option">Reservas</div>

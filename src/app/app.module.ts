@@ -23,7 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {NgIf} from '@angular/common';
-
+import {MatTooltipModule,TooltipPosition} from '@angular/material/tooltip';
 import {FormControl, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -69,6 +69,7 @@ import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-confi
     MatSidenavModule,
     NgIf,
     FontAwesomeModule,
+    MatTooltipModule,
     provideFirebaseApp(() => initializeApp({"projectId":"admin-sistema-reserva","appId":"1:509515744488:web:b4547eac1170c6bd18f55d","storageBucket":"admin-sistema-reserva.appspot.com","apiKey":"AIzaSyCBLtnTzbYbpcjTjeNbviqJlH2JkQnzXEg","authDomain":"admin-sistema-reserva.firebaseapp.com","messagingSenderId":"509515744488"})),
     provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
